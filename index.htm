@@ -59,25 +59,41 @@
 			</p>
 			<div class='img center sep contain ' data-img='img/sep.png' ></div>
 			<div class='ppl'>
-				<div class='person hint--bottom-right ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
+				<div class='img cover person hint--bottom-right ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
 					<div class='tint'>
-						Name of person #1
+						Name of person #1<br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
 					</div>
 				</div>
-				<div class='person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
+				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
 					<div class='tint'>
-						Name of person #2
+						Name of person #2<br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
 					</div>
 				</div>
-				<div class='person hint--bottom-left ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
+				<div class='img cover person hint--bottom-left ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
 					<div class='tint'>
-						Name of person #3
+						Name of person #3<br>
+						<a href='#fb' data-img='img/facebook.png' ></a>
+						<a href='#tw' data-img='img/twitter.png' ></a>
+						<a href='#o' data-img='img/other.png' ></a>
+					</div>
+				</div>
+				<div class='img cover person hint--bottom-left ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
+					<div class='tint'>
+						Name of person #4<br>
+						<a href='#fb' data-img='img/facebook.png' ></a>
+						<a href='#tw' data-img='img/twitter.png' ></a>
+						<a href='#o' data-img='img/other.png' ></a>
+					</div>
+				</div>
+				<div class='img cover person hint--bottom-left ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
+					<div class='tint'>
+						Name of person #5<br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
@@ -91,7 +107,7 @@
 			<iframe class='vid' src="//youtube.com/embed/qTSDL94_Y7M" frameborder="0" allowfullscreen ></iframe>
 		</div><!-- end of section -->
 		<div id=contact class='section'>
-			<iframe left class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+			<iframe id=map left class='map' frameborder="0" style="border:0" allowfullscreen=""></iframe>
 			<p right >
 				<h2>İLETİŞİM</h2>
 				Çırağan Caddesi, Osmanpaşa<br>
@@ -107,6 +123,7 @@
 		window.onload = function() {
 			fix_links();
 			fix_images();
+			document.getElementById('map').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
 		};
 	</script>
 </html>
