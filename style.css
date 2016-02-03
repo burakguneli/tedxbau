@@ -14,15 +14,16 @@ BODY {
 	margin:0;
 }
 
-[data-hint]:after {
+#about [data-hint]:after {
 	width:250% !important;
 	white-space:normal !important;
 	line-height:1.3em !important;
 	background:firebrick !important;
 	font-size:0.9em !important;
+	font-weight:200;
 	border-radius:10px !important;
 }
-[data-hint]:before { border-bottom-color:firebrick !important; }
+#about [data-hint]:before { border-bottom-color:firebrick !important; }
 
 .center { text-align:center; }
 .left { text-align:left; }
@@ -105,8 +106,8 @@ A:hover { color:white; background-color:firebrick; }
 
 #intro {
 	color:white;
-	font-size:72px;
-	padding-top:36vh;
+	font-size:80px;
+	padding-top:32vh;
 	padding-bottom:3vh;
 }
 .hint {
