@@ -29,8 +29,8 @@ BODY {
 .left { text-align:left; }
 .right { text-align:right; }
 .fixed { position:fixed; }
-.cover { background-size:cover; }
-.contain { background-size:contain; }
+.cover { background-size:cover !important; }
+.contain { background-size:contain !important; }
 .block { display:block; }
 
 [left] { float:left; }
