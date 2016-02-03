@@ -15,7 +15,7 @@ BODY {
 }
 
 #about [data-hint]:after {
-	width:200% !important;
+	width:110% !important;
 	white-space:normal !important;
 	line-height:1.3em !important;
 	background:firebrick !important;
@@ -208,6 +208,7 @@ A.hint { text-decoration:none; color:white; }
 	.static { background-attachment:fixed !important; }
 	#contact P { float:right; }
 	#map { float:left; }
+	#about [data-hint]:after { width:180% !important; }
 }
 @media (max-width: 960px) {
 	.static { background-attachment:local !important; }
