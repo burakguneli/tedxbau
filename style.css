@@ -32,6 +32,7 @@ BODY {
 .cover { background-size:cover; }
 .contain { background-size:contain; }
 .block { display:block; }
+.static { background-attachment:fixed !important; }
 
 [left] { float:left; }
 [right] { float:right; }
