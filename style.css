@@ -78,9 +78,7 @@ BODY {
 	position:relative;
 }
 .links A:hover { color:white; background-color:firebrick; }
-.main {
-	padding-right:23px;
-}
+.main { padding-right:23px; }
 .sm A {
 	width:48px;
 	background-clip:content-box;
@@ -103,6 +101,7 @@ BODY {
 	padding:0 5%;
 	z-index:5;
 	box-sizing:border-box;
+	text-align: right;
 }
 .navbar .links.right { font-size:0; }
 
@@ -207,7 +206,14 @@ A.hint { text-decoration:none; color:white; }
 
 @media (min-width: 960px) {
 	.static { background-attachment:fixed !important; }
+	#contact P { float:right; }
+	#map { float:left; }
 }
 @media (max-width: 960px) {
 	.static { background-attachment:local !important; }
+	#contact IFRAME { width:100%; height:60vh; }
+	.logo { display:none; }
+	#gallery IFRAME { width:100%; height:55vh; }
+	.ppl .person { width:100%; height:45vh; }
+	.navbar { padding:0; width:48%; text-align:center; }
 }
