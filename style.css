@@ -217,4 +217,5 @@ A.hint { text-decoration:none; color:white; }
 	#gallery IFRAME { width:100%; height:55vh; }
 	.ppl .person { width:100%; height:45vh; }
 	.navbar { padding:0; width:100%; text-align:center; }
+	#intro { font-size:72px; }
 }
