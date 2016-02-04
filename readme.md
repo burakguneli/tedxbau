@@ -10,7 +10,7 @@ You can do whatever you want, release, redistribute etc etc BUT *provide exact l
 
 ### Other contributors:
 
-first, @burakguneli started on this project on top of bootstrap but i wasn't happy with it because of a lot of add-ons, plugins etc it was sloppy and slow.
+first, [@burakguneli] started on this project on top of bootstrap but i wasn't happy with it because of a lot of add-ons, plugins etc it was sloppy and slow.
 so i decided to complete-rewrite from scratch. And this is it.
 
 i don't know where they found theme-n-stuff but i replicated similarly... (actually afaik some designer draw on photoshop sometime)
@@ -21,3 +21,6 @@ Also i'm using these libraries in my project
 - [jquery](//jquery.com/) v2.2.0
 - [jquery.easing.js](//gsgd.co.uk/sandbox/jquery/easing/) v1.3
 - [Open Sans](//www.google.com/fonts/specimen/Open+Sans) v2.0
+
+
+[@burakguneli]: //github.com/burakguneli
