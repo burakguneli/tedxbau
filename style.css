@@ -19,7 +19,7 @@ BODY {
 	color:#222;
 	margin:0;
 	opacity:0;
-	animation: starter 3s ease-in-out 1s 1 normal;
+	_animation: starter 3s ease-in-out 1s 1 normal;
 }
 
 #about [data-hint]:after {
