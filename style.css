@@ -7,11 +7,19 @@
 */
 
 * { transition:0.3s; }
+HTML {
+	background-color:firebrick;
+	content:attr(data-msg);
+	text-align:center;
+	color:white;
+}
 BODY {
 	font-family:'open sans',sans-serif;
 	font-weight:lighter;
 	color:#222;
 	margin:0;
+	opacity:0;
+	animation: starter 3s ease-in-out 1s 1 normal;
 }
 
 #about [data-hint]:after {
@@ -222,4 +230,20 @@ A.hint { text-decoration:none; color:white; }
 	#intro A.hint { bottom:10%; }
 	#contact P { text-align:center; width:100%; }
 	#contact { text-align:center; }
+}
+load {
+	background:url('img/load.gif');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-color:white;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99;
+}
+@keyframes starter {
+	from { -webkit-filter:grayscale(1) blur(0.2em); }
+	to { -webkit-filter:grayscale(0) blur(0); }
 }
