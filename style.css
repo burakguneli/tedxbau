@@ -226,7 +226,7 @@ A.hint { text-decoration:none; color:white; }
 	.ppl .person { width:100%; height:45vh; }
 	.navbar { padding:0; width:100%; text-align:center; }
 	#intro { font-size:72px; padding-top:25vh; }
-	.sm { position:absolute; bottom:0; background-color:rgba(0,0,0,0.8); height:80px; left:0; right:0; text-align:center; }
+	.sm { position:absolute; top:calc(100% - 80px); bottom:0; background-color:rgba(0,0,0,0.8); height:80px; left:0; right:0; text-align:center; }
 	#intro A.hint { bottom:10%; }
 	#contact P { text-align:center; width:100%; }
 	#contact { text-align:center; }
