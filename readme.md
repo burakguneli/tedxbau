@@ -21,6 +21,6 @@ Also i'm using these libraries in my project
 - [jquery](//jquery.com/) v2.2.0
 - [jquery.easing.js](//gsgd.co.uk/sandbox/jquery/easing/) v1.3
 - [Open Sans](//www.google.com/fonts/specimen/Open+Sans) v2.0
-
+- [owl.carousel](//smashingboxes.github.io/OwlCarousel2/) v2.0.0-b3
 
 [@burakguneli]: //github.com/burakguneli

@@ -211,6 +211,13 @@ A.hint { text-decoration:none; color:white; }
 }
 .sub A { width:100%; height:80px; }
 .dd:hover .sub { display:block; }
+.sponsors { display:inline-block !important; text-align:center; width:80%; padding:15px; background-color:firebrick; border-radius:8px; }
+.sponsors .sponsor {
+	font-size:0;
+	background-color:firebrick;
+	width:23vw;
+	height:25vh;
+}
 
 @media (min-width: 960px) {
 	.static { background-attachment:fixed !important; }
