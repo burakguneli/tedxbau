@@ -75,11 +75,12 @@ BODY {
 	height:100%;
 	vertical-align:middle;
 	position:relative;
+	color:#ccc;
 }
 .links A, .links .dd {
 	display:inline-block;
 	text-decoration:none;
-	color:#ccc;
+	color:inherit;
 	padding:21px 20px;
 	height:100%;
 	box-sizing:border-box;
@@ -133,7 +134,7 @@ BODY {
 	right:10%;
 	box-sizing:border-box;
 }
-A.hint { text-decoration:none; color:white; }
+A.hint { text-decoration:none; color:inherit; }
 
 #about {
 	font-weight:600;
@@ -159,7 +160,7 @@ A.hint { text-decoration:none; color:white; }
 	font-size:1.3em;
 }
 #contact P { text-align:left; text-shadow:-1px -1px 1px black; }
-#contact A { color:white; font-style:italic; }
+#contact A { color:inherit; font-style:italic; }
 #contact IFRAME {
 	width:60%;
 	height:100%;
