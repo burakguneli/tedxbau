@@ -74,44 +74,44 @@
 			<div class='img center sep contain ' data-img='img/sep.png' ></div>
 			<div class='ppl'>
 				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
-					<div class='tint'>
+					<div class='tint'><div class='cont'>
 						Name of person #1<br><br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
-					</div>
+					</div></div>
 				</div>
 				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
-					<div class='tint'>
+					<div class='tint'><div class='cont'>
 						Name of person #2<br><br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
-					</div>
+					</div></div>
 				</div>
 				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
-					<div class='tint'>
+					<div class='tint'><div class='cont'>
 						Name of person #3<br><br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
-					</div>
+					</div></div>
 				</div>
 				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
-					<div class='tint'>
+					<div class='tint'><div class='cont'>
 						Name of person #4<br><br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
-					</div>
+					</div></div>
 				</div>
 				<div class='img cover person hint--bottom ' data-img='ppl/person.jpg' data-hint="a long description of a person... for example: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting..." >
-					<div class='tint'>
+					<div class='tint'><div class='cont'>
 						Name of person #5<br><br>
 						<a href='#fb' data-img='img/facebook.png' ></a>
 						<a href='#tw' data-img='img/twitter.png' ></a>
 						<a href='#o' data-img='img/other.png' ></a>
-					</div>
+					</div></div>
 				</div>
 			</div><!-- end of ppl -->
 		</div><!-- end of section -->
@@ -150,6 +150,8 @@
 			document.getElementsByTagName("body")[0].style.animation = "starter 3s ease-in-out 0s 1 normal";
 			document.getElementsByTagName("body")[0].style.opacity = "1";
 			$('.sponsors').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true});
+			document.getElementsByClassName("sponsors")[0].remove();
+			document.getElementsByClassName("sep")[1].remove();
 		};
 	</script>
 </html>
