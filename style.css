@@ -154,7 +154,7 @@ A.hint { text-decoration:none; color:white; }
 }
 
 #contact {
-	background-color:#739da3;
+	background-color:#F2F2F2;
 	color:white;
 	font-size:1.3em;
 }
@@ -164,7 +164,8 @@ A.hint { text-decoration:none; color:white; }
 	width:60%;
 	height:100%;
 	padding:0 5% 0 1%;
-	height:70vh;
+	height:75vh;
+	height:calc(100vh - 160px);
 }
 
 .ppl .person {
