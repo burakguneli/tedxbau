@@ -238,9 +238,9 @@ A.hint { text-decoration:none; color:inherit; }
 }
 @media (max-width: 960px) {
 	.static { background-attachment:local !important; }
-	#contact IFRAME { width:100%; height:60vh; }
+	#contact IFRAME { width:100%; height:40vh; }
 	.logo { display:none; }
-	#gallery IFRAME { width:100%; height:55vh; }
+	#gallery IFRAME { width:100%; height:30vh; }
 	.ppl .person { width:100%; height:45vh; }
 	.navbar { padding:0; width:100%; text-align:center; }
 	#intro { font-size:72px; padding-top:25vh; }
