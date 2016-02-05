@@ -12,6 +12,7 @@ HTML {
 	content:attr(data-msg);
 	text-align:center;
 	color:white;
+	margin:0;
 }
 BODY {
 	font-family:'open sans',sans-serif;
@@ -19,6 +20,8 @@ BODY {
 	color:#222;
 	margin:0;
 	opacity:0;
+	padding:0;
+	text-align:center;
 	_animation: starter 3s ease-in-out 1s 1 normal;
 }
 
@@ -87,7 +90,6 @@ BODY {
 	position:relative;
 }
 .links A:hover { color:white; background-color:firebrick; }
-.main { padding-right:23px; }
 .sm A {
 	width:48px;
 	background-clip:content-box;
@@ -235,14 +237,16 @@ A.hint { text-decoration:none; color:inherit; }
 	#contact P { float:right; }
 	#map { float:left; }
 	#about [data-hint]:after { width:180% !important; }
+	.main { padding-right:23px; }
 }
 @media (max-width: 960px) {
 	.static { background-attachment:local !important; }
 	#contact IFRAME { width:100%; height:40vh; }
 	.logo { display:none; }
-	#gallery IFRAME { width:100%; height:40vh; }
-	.ppl .person { width:100%; height:45vh; }
+	#gallery IFRAME { width:100%; height:40vh; margin:5px auto; padding:0; }
+	.ppl .person { width:100%; height:45vh; margin:5px auto; }
 	.navbar { padding:0; width:100%; text-align:center; }
+
 	#intro { font-size:72px; padding-top:25vh; }
 	.sm { position:fixed; _top:calc(100% - 80px); bottom:0; background-color:rgba(0,0,0,0.8); height:80px; left:0; right:0; text-align:center; }
 	#intro A.hint { bottom:10%; }
