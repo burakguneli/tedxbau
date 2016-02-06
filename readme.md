@@ -2,6 +2,8 @@
 #### Date: 3 Feb 2016
 #### Author: Mert Akengin
 
+###### [pvtmert.github.io/tedxbau](//pvtmert.github.io/tedxbau)
+
 ### WTF is it?
 
 this is source of TEDxBahcesehir's web site. Mostly single page (landing page) website but there will be small additions such as team page (which is not available yet).
