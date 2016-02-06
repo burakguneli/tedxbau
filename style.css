@@ -271,3 +271,8 @@ load {
 	from { -webkit-filter:grayscale(1) blur(0.2em); }
 	to { -webkit-filter:grayscale(0) blur(0); }
 }
+
+@keyframes lite {
+	from { -webkit-filter:grayscale(1); }
+	to { -webkit-filter:grayscale(0); }
+}
