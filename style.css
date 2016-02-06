@@ -198,8 +198,10 @@ A.hint { text-decoration:none; color:inherit; }
 	position:relative;
 	top:50%;
 	transform:translateY(-50%);
+	z-index:-1;
 }
 .ppl .person:hover > .tint { opacity:1; }
+.ppl .person .tint > .cont { z-index:1; }
 .ppl .person .tint A {
 	width:48px;
 	height:48px;
