@@ -102,7 +102,7 @@ BODY {
 	margin:0 8px;
 }
 .sm A:hover { -webkit-filter:sepia(1); }
-#intro A.hint:hover { -webkit-filter:invert(1); background-color:black; }
+/* #intro A.hint:hover { -webkit-filter:invert(1); background-color:black; } */
 
 .navbar {
 	top:0;
@@ -201,7 +201,7 @@ A.hint { text-decoration:none; color:inherit; }
 	z-index:-1;
 }
 .ppl .person:hover > .tint { opacity:1; }
-.ppl .person .tint > .cont { z-index:1; }
+.ppl .person:hover > .tint .cont { z-index:1; }
 .ppl .person .tint A {
 	width:48px;
 	height:48px;
