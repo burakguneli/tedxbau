@@ -1,7 +1,5 @@
 all:
-	git add .
-	git commit -am "updated: $$(date)"
-	git push
+	make "updated: $$(date)"
 
 %:
 	git add .
