@@ -122,6 +122,9 @@
 			</div><!-- end of ppl -->
 		</div><!-- end of section -->
 		<div id=gallery class='img section cover center static' data-img='img/vid.jpg' >
+			<div id=vidz >
+
+			</div>
 			<!--div class='img center sep contain ' data-img='img/sep.png' ></div>
 			<div class='sponsors owl-carousel owl-theme' >
 				<div class='img contain sponsor' data-img='ppl/mert.jpg'>.</div>
@@ -164,19 +167,33 @@
 			//$('.sponsors').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true});
 			//document.getElementsByClassName("sponsors")[0].remove();
 			//document.getElementsByClassName("sep")[1].remove();
-			document.getElementById("gallery").innerHTML = "\
-			<iframe class='vid' src='//youtube.com/embed/pnDDU16JXQA' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/1PBkHmb5VlE' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/BgsIWMdGpQA' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/QpxCpjmcPgg' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/WVJMeOc2MCw' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/GVfxI4othCg' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/Tskvrwsa_Qo' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/xNVrCumNnAI' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/i519o64tj5w' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/hX_BykD4cVQ' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/tXSqx5ZOAF4' frameborder=0 allowfullscreen ></iframe>\
-			<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>\n" + document.getElementById("gallery").innerHTML;
+			Array.prototype.shuffle = function() {
+				var input = this;
+				for (var i = input.length-1; i >=0; i--) {
+					var randomIndex = Math.floor(Math.random()*(i+1));
+					var itemAtIndex = input[randomIndex];
+					input[randomIndex] = input[i];
+					input[i] = itemAtIndex;
+				}
+				return input;
+			}
+			var vids = [
+				"<iframe class='vid' src='//youtube.com/embed/pnDDU16JXQA' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/1PBkHmb5VlE' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/BgsIWMdGpQA' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/QpxCpjmcPgg' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/WVJMeOc2MCw' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/GVfxI4othCg' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/Tskvrwsa_Qo' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/xNVrCumNnAI' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/i519o64tj5w' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/hX_BykD4cVQ' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/tXSqx5ZOAF4' frameborder=0 allowfullscreen ></iframe>",
+				"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
+			];
+			vids.shuffle();
+			for(i=0;i<vids.length;i++)
+				document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
 		};
 	</script>
 </html>

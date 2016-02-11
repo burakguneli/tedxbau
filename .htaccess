@@ -6,6 +6,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ http://pvtmert.github.io/tedxbau/$1 [L,P]
 
 RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ https://pvtmert.github.io/tedxbau/$1 [L,P]
+#RewriteRule ^(.*)$ https://pvtmert.github.io/tedxbau/$1 [L,P]
+# run local copy
 
 # i dunno if http vs https causes problems in case of https, get https version of url...

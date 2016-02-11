@@ -236,6 +236,14 @@ A.hint { text-decoration:none; color:inherit; }
 	height:25vh;
 }
 
+#vidz {
+	height:44vh;
+	overflow:hidden;
+	white-space:nowrap;
+	overflow-x:auto;
+	padding-bottom:5%;
+}
+#vidz IFRAME { width:44%; }
 @media (min-width: 960px) {
 	.static { background-attachment:fixed !important; }
 	#contact P { float:right; }
