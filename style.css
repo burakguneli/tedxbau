@@ -231,6 +231,7 @@ A.hint { text-decoration:none; color:inherit; }
 .pic { display:inline-block !important; text-align:center; width:80%; padding:15px; background-color:firebrick; border-radius:8px; }
 #pics .pic {
 	font-size:0;
+	background-size: cover;
 	background-color:transparent;
 	width:24vw;
 	height:33vh;
