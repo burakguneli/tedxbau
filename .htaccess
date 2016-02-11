@@ -1,2 +1,11 @@
+DirectoryIndex index.php index.htm index.html
+
 RewriteEngine On
+
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ http://pvtmert.github.io/tedxbau/$1 [L,P]
+
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://pvtmert.github.io/tedxbau/$1 [L,P]
+
+# i dunno if http vs https causes problems in case of https, get https version of url...
