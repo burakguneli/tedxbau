@@ -35,7 +35,7 @@ BODY {
 	border-radius:10px !important;
 	top:67%;
 }
-#about [data-hint]:before { border-bottom-color:firebrick !important; }
+#about [data-hint]:before { border-bottom-color:firebrick !important; display:none; }
 
 .center { text-align:center; }
 .left { text-align:left; }
