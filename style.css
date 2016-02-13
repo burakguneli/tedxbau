@@ -310,3 +310,10 @@ load {
 .owl-theme .owl-nav [class*=owl-] {
 	background:firebrick !important;
 }
+.owl-theme .owl-dots .owl-dot span {
+	background:firebrick !important;
+	opacity:0.5;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	opacity:1;
+}
