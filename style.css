@@ -307,3 +307,6 @@ load {
 	margin:0 !important;
 	padding:0 !important;
 }
+.owl-theme .owl-nav [class*=owl-] {
+	background:firebrick !important;
+}
