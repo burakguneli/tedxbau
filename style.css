@@ -61,7 +61,7 @@ BODY {
 .section {
 	min-height:100%;
 	min-height:100vh;
-	padding:100px 5%;
+	padding:100px 6%;
 	box-sizing:border-box;
 }
 
@@ -167,7 +167,7 @@ A.hint { text-decoration:none; color:inherit; }
 	font-size:1.3em;
 }
 #contact P { text-align:left; text-shadow:-1px -1px 1px black; }
-#contact A { color:inherit; font-style:italic; }
+#contact A, #about A { color:inherit; font-style:italic; }
 #contact IFRAME {
 	width:60%;
 	height:100%;
@@ -220,16 +220,16 @@ A.hint { text-decoration:none; color:inherit; }
 .ppl .person .tint A:hover { -webkit-filter:sepia(1); }
 
 .sub {
-	width:100%;
+	min-width:99%;
 	display:none;
 	position:absolute;
 	background-color:rgba(0,0,0,0.8);
 	box-shadow:0px 8px 16px 0px rgba(255,255,255,0.2);
 	padding:0;
 	z-index:1;
-	margin:-2.2em -20px;
+	margin-left:-23%;
 }
-.sub A { width:100%; height:80px; }
+.sub A { min-width:99%; height:80px; margin:0; }
 .dd:hover .sub { display:block; }
 .pic { display:inline-block !important; text-align:center; width:80%; padding:15px; background-color:firebrick; border-radius:8px; }
 #pics .pic {
@@ -238,8 +238,10 @@ A.hint { text-decoration:none; color:inherit; }
 	background-color:transparent;
 	width:24vw;
 	height:33vh;
-	z-index:2;
+	z-index:1;
 }
+#sps, .sponsor { display:inline-block; font-size:0; width:100%; height:33vh; }
+#sps .pic { height:20vh; background-color:transparent; }
 
 #vidz {
 	height:44vh;

@@ -35,7 +35,14 @@
 					</div>
 				</span>
 				<a href='#gallery'>Galeri</a>
-				<a href='#contact'>İletişim</a>
+				<span class='dd' >
+					<span style=''>İletişim</span>
+					<div class='sub' >
+						<a href='#about'>İletişim</a>
+						<a href='#coop' >Partnerler</a>
+					</div>
+				</span>
+				<!--a href='#contact'></a-->
 			</div>
 			<div class='links right sm' >
 				<a class='img' target=_blank href='//facebook.com/TEDxBahcesehirUniversity-1603137146620273'
@@ -132,11 +139,19 @@
 					</div></div>
 				</div>
 			</div><!-- end of ppl -->
+			<div id=coop class='img center sep contain ' data-img='img/sep.png' ></div>
+			<h2>Stratejik Ortağımız</h2>
+			<div class='img center contain sponsor ' data-img='sp/inc.png' ></div>
+			<h2>Sponsorlarimiz</h2>
+			<p style='font-weight:lighter;'>
+				<div id=sps class='owl-carousel owl-theme' ></div><br>
+				Sizler de bu değişimin ortağı olmak ister misiniz?<br>
+				İletişim için <a href='mailto:info@tedxbahcesehir.com' >
+					info[at]tedxbahcesehir.com</a>
+			</p>
 		</div><!-- end of section -->
 		<div id=gallery class='img section cover center static' data-img='img/vid.jpg' >
-			<div id=vidz >
-
-			</div>
+			<div id=vidz ></div>
 			<div class='img center sep contain ' data-img='img/sep.png' ></div>
 			<div id=pics class='owl-carousel owl-theme' ></div>
 		</div><!-- end of section -->
@@ -173,6 +188,7 @@
 			}
 			return input;
 		}
+		var sp = ['coop.jpg','guntar.png','markoc.png'];
 		var g = [
 			"DSC05735",
 			"DSC05743",
@@ -215,8 +231,11 @@
 		];
 		//document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 		window.onload = function() {
+			sp.shuffle();
 			g.shuffle();
 			vids.shuffle();
+			for(i=0;i<sp.length;i++)
+				document.getElementById('sps').innerHTML = "<div class='img pic contain' data-img='sp/"+sp[i]+"''>.</div>\n"+document.getElementById('sps').innerHTML;
 			for(i=0;i<g.length;i++)
 				document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
 			for(i=0;i<vids.length;i++)
@@ -226,9 +245,8 @@
 			document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 			document.getElementsByTagName("body")[0].style.opacity = "1";
 			document.getElementById('map').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
+			$('#sps').owlCarousel({loop:true,center:true,nav:true,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"]});
 			$('#pics').owlCarousel({loop:true,center:true,nav:true,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"]});
-			//document.getElementById("pics").remove();
-			//document.getElementsByClassName("sep")[1].remove();
 			/*
 			pics = document.getElementsByClassName('pic');
 			for(i=0;i<pics.length;i++)
