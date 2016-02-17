@@ -81,16 +81,16 @@ BODY {
 	position:relative;
 	color:#ccc;
 }
-.links A, .links .dd {
+.links .dd { cursor:pointer; position:relative; }
+.links A, .links .dd SPAN {
 	display:inline-block;
 	text-decoration:none;
 	color:inherit;
 	padding:21px 20px;
 	height:100%;
 	box-sizing:border-box;
-	position:relative;
 }
-.links A:hover { color:white; background-color:firebrick; }
+.links A:hover, .links .dd:hover > SPAN { color:white; background-color:firebrick; }
 .sm A {
 	width:48px;
 	background-clip:content-box;
@@ -110,7 +110,7 @@ BODY {
 	right:0;
 	height:80px;
 	background-color:rgba(0,0,0,0.8);
-	padding:0 5%;
+	padding:0 3%;
 	z-index:5;
 	box-sizing:border-box;
 	text-align: right;
@@ -220,16 +220,15 @@ A.hint { text-decoration:none; color:inherit; }
 .ppl .person .tint A:hover { -webkit-filter:sepia(1); }
 
 .sub {
-	min-width:99%;
+	_min-width:99%;
 	display:none;
 	position:absolute;
 	background-color:rgba(0,0,0,0.8);
 	box-shadow:0px 8px 16px 0px rgba(255,255,255,0.2);
 	padding:0;
 	z-index:1;
-	margin-left:-23%;
 }
-.sub A { min-width:99%; height:80px; margin:0; }
+.sub A { min-width:99%; height:80px; margin:0; display:block; }
 .dd:hover .sub { display:block; }
 .pic { display:inline-block !important; text-align:center; width:80%; padding:15px; background-color:firebrick; border-radius:8px; }
 #pics .pic {
