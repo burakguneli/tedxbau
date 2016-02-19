@@ -220,7 +220,7 @@ A.hint { text-decoration:none; color:inherit; }
 .ppl .person .tint A:hover { -webkit-filter:sepia(1); }
 
 .sub {
-	_min-width:99%;
+	min-width:100%;
 	display:none;
 	position:absolute;
 	background-color:rgba(0,0,0,0.8);
