@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 	background-color:firebrick;
 }
@@ -84,6 +85,20 @@ body{
 	width: 70%;
     margin: auto;
 }
+=======
+/*
+	Tedx Bahcesehir
+	Team stylesheet
+	team.css
+	Developer: Burak Guneli
+	Date: 19 Feb 2016
+*/
+
+.organizator img{
+
+	width: 50px;
+	height: 100px;
+>>>>>>> 01ba909a8d4460839070fb8d0e792d48a5ab378c
 
 .team ul li{
 	float: left;
