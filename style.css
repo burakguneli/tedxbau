@@ -81,7 +81,7 @@ BODY {
 	position:relative;
 	color:#ccc;
 }
-.links .dd { cursor:pointer; position:relative; }
+.links .dd { cursor:pointer; position:relative; display:inline-block; }
 .links A, .links .dd SPAN {
 	display:inline-block;
 	text-decoration:none;
