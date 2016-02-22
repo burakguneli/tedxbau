@@ -24,7 +24,7 @@
 
 .organizator ul li{
 	list-style-type: none;
-	text-align: center;
+	display: inline-block;
 	margin-right: 40px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .liderler ul li{
-	float: left;
+	display: inline-block;
 	list-style-type: none;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -73,7 +73,7 @@
 }
 
 .team ul li{
-	float: left;
+	display: inline-block;
 	list-style-type: none;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -104,14 +104,16 @@
 }
 
 .team{
-	margin-top: 350px;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
 }
 
 .designers ul li{
-	float: left;
+	display: inline-block;
 	list-style-type: none;
-	margin-left: 6%;
-	margin-right: 6%;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 
 .designers p{
@@ -134,19 +136,20 @@
 }
 
 .designers ul{
-	width: 70%;
+	width: 55%;
     margin-left: 21%;
     margin-right: 21%;
 }
 
 .designers{
-	margin-top: 2370px;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
 }
 
 @media (max-width: 1521px){
 
 .team{
-	margin-top: 650px;
 }
 
 .liderler ul{
@@ -163,7 +166,7 @@
 }
 
 .designers{
-	margin-top: 3570px;
+	margin-top: 100px;
 }
 
 }
@@ -217,7 +220,11 @@
 	}
 
 	.designers{
-		margin-top: 2600px;
+		margin-top: 100px;
+	}
+
+	.designers ul{
+		width: 40%;
 	}
 }
 
