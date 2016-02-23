@@ -15,6 +15,9 @@ pull:
 	git branch
 	git pull
 
+push:
+	git $@
+
 pics:
 	ls -1 g/*.lite.jpg | cut -b 3-10 | while readm x; do echo "\"$$x\","; done
 

@@ -2,9 +2,20 @@
 	bu ne abi olmamis bidaha yaptim :)
 */
 
+HTML {
+	background-image:url('../img/ppl.jpg');
+	background-color:transparent;
+	background-position:center;
+	background-size:cover;
+	background-clip:border-box;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
 BODY { padding-top:80px; }
+H2 { color:#222; font-weight:lighter; }
+
 .section { min-height:0; padding:40px 7%; }
-H2 { color:white; font-weight:lighter; }
+
 .ppl .person {
 	width:25vw;
 	height:30vh;
