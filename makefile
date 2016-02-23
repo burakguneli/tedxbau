@@ -7,8 +7,8 @@ all:
 	git push
 
 min:
-	for i in style.css fonts.css; do \
-		curl -X POST -s --data-urlencode "input@$$i" 'http://cssminifier.com/raw' > $$(basename "$$i" '.css').min.css; \
+	for i in css/team.css css/style.css css/fonts.css; do \
+		curl -X POST -s --data-urlencode "input@$$i" 'http://cssminifier.com/raw' > $$(dirname $$i)/$$(basename "$$i" '.css').min.css; \
 	done
 
 pull:

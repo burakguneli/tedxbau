@@ -20,7 +20,7 @@
 		<link rel='author' href='//pvtmert.github.io' >
 		<link rel="icon" type="image/png" href="img/tedx.png" >
 		<link rel='stylesheet' type='text/css' href='css/fonts.min.css' >
-		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.min.css' >
 		<!-- script type='text/javascript' src='js/https.js' /></script -->
 	</head>
 	<body>
@@ -222,14 +222,15 @@
 		];
 		//document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 		window.onload = function() {
+
 			sp.shuffle();
 			g.shuffle();
 			vids.shuffle();
 			for(i=0;i<sp.length;i++)
 				document.getElementById('sps').innerHTML = "<div class='img pic contain' data-img='sp/"+sp[i]+"''>.</div>\n"+document.getElementById('sps').innerHTML;
-			for(i=0;i<g.length;i++)
+			for(i=0;i<g.length/2;i++)
 				document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
-			for(i=0;i<vids.length;i++)
+			for(i=0;i<vids.length/2;i++)
 				document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
 			fix_links();
 			fix_images();
