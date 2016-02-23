@@ -15,4 +15,7 @@ pull:
 	git branch
 	git pull
 
+pics:
+	ls -1 g/*.lite.jpg | cut -b 3-10 | while readm x; do echo "\"$$x\","; done
+
 # curl -X POST -s --data-urlencode 'input@ready.js' https://javascript-minifier.com/raw > ready.min.js
