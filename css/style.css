@@ -72,8 +72,9 @@ BODY {
 	font-size:0;
 }
 
+.links A, .links .dd, .links .sub { font-size:24px; }
 .links {
-	font-size:1.5em;
+	font-size:0;
 	display:inline-block;
 	box-sizing:border-box;
 	height:100%;
@@ -120,7 +121,7 @@ BODY {
 #intro {
 	color:white;
 	font-size:80px;
-	padding-top:30vh;
+	padding-top:25vh;
 	padding-bottom:3vh;
 	text-shadow:-1px -1px 1px black;
 	background-image:url('../img/main.jpg');
@@ -129,7 +130,7 @@ BODY {
 	font-size:20px;
 	height:auto;
 	vertical-align:bottom;
-	padding:4px;
+	padding:8px;
 	background-position:top;
 	box-sizing:border-box;
 	border-radius:12px;
@@ -143,7 +144,7 @@ BODY {
 	text-decoration:none;
 	font-style:italic;
 	padding:7px;
-	margin:0;
+	margin:8px;
 	font-size:0;
 	vertical-align:top;
 	background-origin:content-box;
@@ -264,11 +265,11 @@ A.hint { text-decoration:none; color:inherit; }
 	overflow:hidden;
 	white-space:nowrap;
 	overflow-x:auto;
-	box-shadow:inset 0 0 1em black;
 	background-color:rgba(255,255,255,0.5);
 	border-radius:10px;
 	vertical-align:middle;
 	box-sizing:border-box;
+	_box-shadow:inset 0 0 1em black;
 }
 #vidz IFRAME { width:38%; }
 
@@ -277,7 +278,7 @@ A.hint { text-decoration:none; color:inherit; }
 	padding:10px;
 	border-radius:10px;
 	background-color:rgba(255,255,255,0.5);
-	box-shadow:inset 0 0 0.5em #333;
+	_box-shadow:inset 0 0 0.5em #333;
 }
 @media (min-width: 960px) {
 	.static { background-attachment:fixed !important; }
@@ -294,14 +295,15 @@ A.hint { text-decoration:none; color:inherit; }
 	.ppl .person { width:100%; height:45vh; margin:5px auto; }
 	.navbar { padding:0; width:100%; text-align:center; }
 
-	#intro { font-size:72px; padding-top:23vh; }
+	#intro { font-size:72px; padding-top:18vh; }
 	.sm { position:fixed; _top:calc(100% - 80px); bottom:0; background-color:rgba(0,0,0,0.8); height:80px; left:0; right:0; text-align:center; }
 	#intro A.hint, #intro #more { bottom:12%; }
 	#contact P { text-align:center; width:100%; }
 	#contact { text-align:center; }
 	#pics .pic { width:100%; }
 	#viz { min-height:55vh; }
-	.ticket{ margin:16px; min-width:56%; min-height:8vh; }
+	.ticket{ margin:24px; min-width:56%; min-height:8vh; }
+	#about { font-size:1em; padding:120px 5%; }
 }
 load {
 	background:url('img/load.gif');
