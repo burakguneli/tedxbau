@@ -26,3 +26,7 @@ H1 { color:#222; font-weight:lighter; }
 .organizator.ppl .person {
 	height:60vh;
 }
+
+@media (max-width: 960px) {
+	.ppl .person { width:80vw; }
+}
