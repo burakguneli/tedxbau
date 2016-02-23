@@ -12,7 +12,7 @@ HTML {
 	background-repeat:no-repeat;
 }
 BODY { padding-top:80px; }
-H2 { color:#222; font-weight:lighter; }
+H1 { color:#222; font-weight:lighter; }
 
 .section { min-height:0; padding:40px 7%; }
 
