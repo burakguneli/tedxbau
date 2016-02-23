@@ -25,6 +25,7 @@ H1 { color:#222; font-weight:lighter; }
 
 .organizator.ppl .person {
 	height:60vh;
+	background-position:top;
 }
 
 @media (max-width: 960px) {
