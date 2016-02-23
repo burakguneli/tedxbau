@@ -33,5 +33,6 @@ H1 { color:#222; font-weight:lighter; }
 }
 
 @media (max-width: 960px) {
+	BODY { padding:50px 0; }
 	.ppl .person { width:80vw; }
 }
