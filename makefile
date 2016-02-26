@@ -6,7 +6,7 @@ min:
 		curl -X POST -s --data-urlencode "input@$$i" 'https://cssminifier.com/raw' > $$(dirname "$$i")/$$(basename "$$i" '.css').min.css; \
 	done
 
-push, pull:
+push pull:
 	git branch
 	git $@
 
@@ -15,7 +15,7 @@ pics:
 
 # curl -X POST -s --data-urlencode 'input@ready.js' https://javascript-minifier.com/raw > ready.min.js
 
-%:
+%: min
 	git add .
 	git commit -am "$@"
 	git push
