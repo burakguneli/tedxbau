@@ -26,6 +26,9 @@ H1 { color:#222; font-weight:lighter; }
 	margin:10px;
 	font-size:1.5em;
 }
+.ppl .person .tint {
+	background-color:rgba(0,0,0,0.6);
+}
 
 .organizator.ppl .person {
 	height:60vh;
