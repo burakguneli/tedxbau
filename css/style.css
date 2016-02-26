@@ -150,6 +150,7 @@ BODY {
 	background-origin:content-box;
 	min-width:15%;
 	min-height:7vh;
+	background-image:url('img/bilet.png');
 }
 #contact .ticket { border-color:#222; }
 #intro #more {
