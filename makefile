@@ -15,7 +15,7 @@ pics:
 
 # curl -X POST -s --data-urlencode 'input@ready.js' https://javascript-minifier.com/raw > ready.min.js
 
-%: min
+%:
 	git add .
 	git commit -am "$@"
 	git push
