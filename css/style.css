@@ -235,7 +235,7 @@ A.hint { text-decoration:none; color:inherit; }
 	background-attachment:local;
 	background-repeat:no-repeat;
 	display:inline-block;
-	margin:10px 5px;
+	margin:10px 3px;
 }
 .ppl .person .tint A:hover { -webkit-filter:sepia(1); }
 
