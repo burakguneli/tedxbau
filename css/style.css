@@ -220,10 +220,10 @@ A.hint { text-decoration:none; color:inherit; }
 	position:relative;
 	top:50%;
 	transform:translateY(-50%);
-	z-index:-1;
 }
 .ppl .person:hover > .tint { opacity:1; }
-.ppl .person:hover > .tint .cont { z-index:1; }
+.ppl .person:hover > .tint .cont A { animation:fade 0.5s ease-in-out 0s 1 normal forwards; }
+.ppl .person .tint .cont A { pointer-events:none; opacity:0; }
 .ppl .person .tint A {
 	width:48px;
 	height:48px;
@@ -327,6 +327,10 @@ load {
 @keyframes lite {
 	from { -webkit-filter:grayscale(1); }
 	to { -webkit-filter:grayscale(0); }
+}
+@keyframes fade {
+	from { opacity:0; }
+	to { opacity:1; pointer-events:auto; }
 }
 #pics .fs {
 	background-color:firebrick !important;
