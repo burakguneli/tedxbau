@@ -26,7 +26,7 @@ BODY {
 }
 
 #about [data-hint]:after {
-	width:110% !important;
+	width:100% !important;
 	white-space:normal !important;
 	line-height:1.3em !important;
 	background:firebrick !important;
