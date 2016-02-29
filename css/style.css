@@ -225,6 +225,7 @@ A.hint { text-decoration:none; color:inherit; }
 .ppl .person:hover > .tint { opacity:1; }
 .ppl .person:hover > .tint .cont A { animation:fade 0.5s ease-in-out 0s 1 normal forwards; }
 .ppl .person .tint .cont A { pointer-events:none; opacity:0; }
+.ppl .person .tint .cont A:hover { pointer-events:auto; }
 .ppl .person .tint A {
 	width:48px;
 	height:48px;
