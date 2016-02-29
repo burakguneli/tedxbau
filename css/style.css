@@ -223,9 +223,6 @@ A.hint { text-decoration:none; color:inherit; }
 	white-space:nowrap;
 }
 .ppl .person:hover > .tint { opacity:1; }
-.ppl .person:hover > .tint .cont A { animation:fade 0.5s ease-in-out 0s 1 normal forwards; }
-.ppl .person .tint .cont A { pointer-events:none; opacity:0; }
-.ppl .person .tint .cont A:hover { pointer-events:auto; }
 .ppl .person .tint A {
 	width:48px;
 	height:48px;
@@ -308,6 +305,8 @@ A.hint { text-decoration:none; color:inherit; }
 	#viz { min-height:55vh; }
 	.ticket{ margin:24px; min-width:56%; min-height:8vh; }
 	#about { font-size:1em; padding:120px 5%; }
+.ppl .person:hover > .tint .cont A { animation:fade 0.5s ease-in-out 0s 1 normal forwards; }
+.ppl .person .tint .cont A { pointer-events:none; opacity:0; }
 }
 load {
 	background:url('img/load.gif');
