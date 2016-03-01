@@ -24,6 +24,7 @@ BODY {
 	text-align:center;
 	_animation: starter 3s ease-in-out 1s 1 normal;
 }
+_H2 { text-shadow:-1px -1px 1px firebrick; }
 
 #about [data-hint]:after {
 	width:100% !important;
@@ -151,8 +152,9 @@ BODY {
 	min-width:15%;
 	min-height:7vh;
 	background-image:url('../img/bilet.png');
+	box-shadow:0 0 5px white;
 }
-#contact .ticket { border-color:#222; }
+#contact .ticket { border-color:#222; box-shadow:0 0 3px #222; }
 #intro #more {
 	padding-top:64px;
 	position:absolute;
@@ -242,7 +244,7 @@ A.hint { text-decoration:none; color:inherit; }
 	display:none;
 	position:absolute;
 	background-color:rgba(0,0,0,0.8);
-	box-shadow:0px 8px 16px 0px rgba(255,255,255,0.2);
+	box-shadow:0px 8px 16px 0px rgba(250,0,0,0.33);
 	padding:0;
 	z-index:1;
 }
