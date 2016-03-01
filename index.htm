@@ -54,7 +54,7 @@
 			<a href="//biletino.com/event/eventdetail/2246" class="img contain ticket" target=_blank data-img="img/bilet.png" >Bilet Al!</a>
 			<a id=more href='#about' class='img hint block' data-img='img/arrow.png' >Daha fazlası için...</a>
 		</div><!-- end of section -->
-		<div id=about class='img section cover center static' data-img='img/ppl.jpg'>
+		<div id=about class='img section cover center static' data-img='img/pplm.jpg'>
 			<p>
 				Technology, Entertainment ve Design sözcüklerinin baş harflerinden oluşan TED, “ideas worth spreading” sloganıyla yola çıkan ve kar amacı gütmeyen bir organizasyondur. 30 senelik bir geçmişi olan ve konuşmaların 18 dakikayla sınırlı olduğu TED konferanslarında bugüne kadar Bill Gates, Al Gore, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende ve İngiltere Başbakanı Gordon Brown gibi isimler konuşmacı olarak yer aldı.
 			</p>
@@ -171,7 +171,7 @@
 					info[at]tedxbahcesehir.com</a>
 			</p>
 		</div><!-- end of section -->
-		<div id=gallery class='img section cover center static' data-img='img/vid.jpg' >
+		<div id=gallery class='img section cover center static' data-img='img/vidm.jpg' >
 			<div id=vidz ></div>
 			<div class='img center sep contain ' data-img='img/sep.png' ></div>
 			<div id=pics class='owl-carousel owl-theme' ></div>
@@ -246,7 +246,11 @@
 		];
 		//document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 		window.onload = function() {
-
+			$(document).ready(function() {
+				for(i=0;i<vids.length/4;i++)
+					document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
+				return;
+			});
 			sp.shuffle();
 			g.shuffle();
 			vids.shuffle();
@@ -254,15 +258,13 @@
 				document.getElementById('sps').innerHTML = "<div class='img pic contain' data-img='sp/"+sp[i]+"''>.</div>\n"+document.getElementById('sps').innerHTML;
 			for(i=0;i<g.length/2;i++)
 				document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
-			for(i=0;i<vids.length/2;i++)
-				document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
 			fix_links();
 			fix_images();
 			document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 			document.getElementsByTagName("body")[0].style.opacity = "1";
 			document.getElementById('map').src = "https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
-			$('#sps').owlCarousel({loop:true,center:true,nav:true,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/420)});
-			$('#pics').owlCarousel({loop:true,center:true,nav:true,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/480)});
+			$('#sps').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/420)});
+			$('#pics').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/480)});
 			/*
 			pics = document.getElementsByClassName('pic');
 			for(i=0;i<pics.length;i++)
