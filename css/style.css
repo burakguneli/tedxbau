@@ -246,7 +246,7 @@ A.hint { text-decoration:none; color:inherit; }
 	padding:0;
 	z-index:1;
 }
-.sub A { min-width:99%; height:80px; margin:0; display:block; }
+.sub A { min-width:99%; height:80px; margin:0; display:block; white-space:nowrap; }
 .dd:hover .sub { display:block; }
 .pic { display:inline-block !important; text-align:center; width:80%; padding:15px; background-color:firebrick; border-radius:8px; }
 #pics .pic {
