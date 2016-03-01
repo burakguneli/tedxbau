@@ -356,7 +356,7 @@ load {
 .owl-theme .owl-dots .owl-dot span {
 	background:firebrick !important;
 	opacity:0.5;
-	box-shadow: 0 0 0.5em firebrick;
+	_box-shadow: 0 0 0.5em firebrick;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	opacity:1;
