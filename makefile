@@ -8,7 +8,7 @@ all:
 
 min:
 	@echo "minifying js..."
-	@cat js/{landing,img,custom}.js | curl -X POST -s --data-urlencode "input=$(cat -)" https://javascript-minifier.com/raw > js/custom.min.js
+	@cat js/{landing,img,custom}.js | curl -X POST -s --data-urlencode "input=$$(cat -)" "https://javascript-minifier.com/raw" > js/custom.min.js
 	@echo "minifying css..."
 	@for i in css/{team,style,fonts}.css; do \
 		echo $$i; \
