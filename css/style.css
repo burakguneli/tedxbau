@@ -165,7 +165,7 @@ _H2 { text-shadow:-1px -1px 1px firebrick; }
 A.hint { text-decoration:none; color:inherit; }
 
 #about {
-	font-weight:600;
+	font-weight:400;
 	font-size:1.33em;
 	padding:120px 10%;
 }
