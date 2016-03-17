@@ -8,7 +8,7 @@ Array.prototype.shuffle = function() {
 	}
 	return input;
 }
-var sp = ['coop.png','guntar.png','markoc.png','ozgun.png','isezero.png','abbox.png','sh.png','etohum.png',];
+var sp = ['coop.png','guntar.png','markoc.png','ozgun.png','isezero.png','abbox.png','sh.png','etohum.png','vis.png',];
 var g = [
 	"DSC05735",
 	"DSC05743",
