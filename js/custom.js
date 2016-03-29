@@ -8,7 +8,7 @@ Array.prototype.shuffle = function() {
 	}
 	return input;
 }
-var sp = ['coop.png','guntar.png','markoc.png','ozgun.png','isezero.png','abbox.png','sh.png','etohum.png','vis.png','anadolu.png','poz.png',];
+var sp = ['coop.png','guntar.png','markoc.png','ozgun.png','isezero.png','abbox.png','sh.png','etohum.png','vis.png','anadolu.png','poz.png','ck.png',];
 var g = [
 	"DSC05735",
 	"DSC05743",
@@ -69,5 +69,7 @@ window.onload = function() {
 			$(this).toggleClass('fs');
 		};
 	*/
+	if(1459382400000 > Date.now())
+		document.getElementsByClassName("ticket")[0].style.display = "none";
 	return;
 };
