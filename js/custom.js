@@ -8,7 +8,7 @@ Array.prototype.shuffle = function() {
 	}
 	return input;
 }
-var sp = ['coop.png','guntar.png','markoc.png','ozgun.png','isezero.png','abbox.png','sh.png','etohum.png','vis.png','poz.png',];
+var sp = ['coop.png|','guntar.png|','markoc.png|','ozgun.png|','isezero.png|','abbox.png|','sh.png|','etohum.png|','vis.png|','poz.png|',];
 var g = [
 	"DSC05735",
 	"DSC05743",
@@ -52,7 +52,7 @@ window.onload = function() {
 	g.shuffle();
 	vids.shuffle();
 	for(i=0;i<sp.length;i++)
-		document.getElementById('sps').innerHTML = "<div class='img pic contain' data-img='sp/"+sp[i]+"''>.</div>\n"+document.getElementById('sps').innerHTML;
+		document.getElementById('sps').innerHTML = "<a target=_blank href='"+sp[i].split("|")[1]+"' class='img pic contain' data-img='sp/"+sp[i].split("|")[0]+"''>.</a>\n"+document.getElementById('sps').innerHTML;
 	for(i=0;i<g.length/2;i++)
 		document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
 	fix_links();
