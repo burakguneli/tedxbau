@@ -19,7 +19,7 @@ BODY {
 	font-weight:lighter;
 	color:#222;
 	margin:0;
-	opacity:1;
+	opacity:0.01;
 	padding:0;
 	text-align:center;
 	_animation: starter 3s ease-in-out 1s 1 normal;
@@ -151,7 +151,6 @@ _H2 { text-shadow:-1px -1px 1px firebrick; }
 	background-origin:content-box;
 	min-width:15%;
 	min-height:7vh;
-	background-image:url('../img/bilet.png');
 	box-shadow:0 0 5px white;
 }
 #contact .ticket { border-color:#222; box-shadow:0 0 3px #222; }
