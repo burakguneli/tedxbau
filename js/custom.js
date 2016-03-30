@@ -57,8 +57,8 @@ window.onload = function() {
 		document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
 	fix_links();
 	fix_images();
-	//document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
-	//document.getElementsByTagName("body")[0].style.opacity = "1";
+	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
+	document.getElementsByTagName("body")[0].style.opacity = "1";
 	document.getElementById('map').src = "https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
 	$('#sps').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/420)});
 	$('#pics').owlCarousel({loop:true,center:true,nav:false,autoplay:true,autoplayTimeout:2500,autoplayHoverPause:true,navText:["&lt;","&gt;"],lazyLoad:true,items:Math.round(window.screen.width/480)});
@@ -71,5 +71,6 @@ window.onload = function() {
 	*/
 	if(1459382400000 > Date.now())
 		document.getElementsByClassName("ticket")[0].style.display = "none";
+	document.getElementsByTagName("BODY")[0].style.opacity = "0";
 	return;
 };
