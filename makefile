@@ -1,7 +1,8 @@
 all:
 	make "updated: $$(date)"
 
-%: min
+%:
+	make min
 	git add .
 	git commit -am "$@"
 	git push
