@@ -43,6 +43,9 @@ var vids = [
 ];
 //document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 window.onload = function() {
+	setTimeout(function() {
+		document.getElementsByTagName("body")[0].style.opacity = "1";
+	},5000);
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
 	$(document).ready(function() {
