@@ -45,7 +45,7 @@ var vids = [
 window.onload = function() {
 	setTimeout(function() {
 		document.getElementsByTagName("body")[0].style.opacity = "1";
-	},5000);
+	},1111);
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
 	$(document).ready(function() {
