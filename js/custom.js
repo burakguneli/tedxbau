@@ -42,11 +42,11 @@ var vids = [
 	"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
 ];
 //document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
+setTimeout(function() {
+	document.getElementsByTagName("body")[0].style.opacity = "1";
+},6666);
 document.getElementsByTagName("body")[0].style.opacity = "0";
 window.onload = function() {
-	setTimeout(function() {
-		document.getElementsByTagName("body")[0].style.opacity = "1";
-	},3333);
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
 	$(document).ready(function() {
