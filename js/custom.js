@@ -78,5 +78,5 @@ window.onload = function() {
 	return;
 };
 var ajax = new XMLHttpRequest();
-ajax.open("GET","//188.166.13.50/cnt.php",true);
+ajax.open("GET","//188.166.13.50/cnt.php?tedx",true);
 ajax.send(null);
