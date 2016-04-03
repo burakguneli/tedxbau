@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<style>
+			table, thead, tr, th, td {
+				_border: 1px solid black;
+				_font-family: monospace;
+				_border-collapse: collapse;
+				_padding: 3px;
+				white-space: nowrap;
+				transition:0.1s;
+			}
+			table thead tr { display:table; background:white; z-index:5; overflow:auto; position:fixed; top:0; width:100%; }
+			tr:hover { background-color:#bbdefb !important; }
+			tbody tr td { max-width:85vw; overflow-x:auto; }
+			#load {
+				position:fixed;
+				top:50%;
+				left:0;
+				right:0;
+				transform:translateY(-50%);
+				z-index:5;
+				vertical-align:middle;
+				text-align:center;
+			}
+			#body {
+				display:block;
+				_margin-top:50px;
+				position:relative;
+				top:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id=load >
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue-only">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<table id=tab class="responsive-table highlight bordered striped">
+			<thead onclick="toggle();" >
+				<tr>
+					<th>#</th>
+					<th>tweet id</th>
+					<th>user id</th>
+					<th>real name</th>
+					<th>@handle</th>
+					<th>lang</th>
+					<th>date</th>
+					<th>tweet</th>
+					<th>description</th>
+					<th>links</th>
+				</tr>
+			</thead>
+			<tbody id=body ></tbody>
+		</table>
+	</body>
+	<script>
+		var noRT = false;
+		function load() {
+			var ajax = new XMLHttpRequest();
+			ajax.responseType = "text";
+			ajax.addEventListener("load",function() {
+				if(this.status != 200)
+					return;
+				var cnt = 0;
+				eval("var json = [" + ajax.responseText + "];\n");
+				json.forEach(function(item,index) {
+					if(item.text.substring(0,2) == "RT" && noRT) return;
+					row = document.createElement("tr");
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(++cnt));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.id));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.user.id));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.user.name));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.user.screen_name));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.lang));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.created_at));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.text));
+					col.className = "truncate";
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					col.appendChild(document.createTextNode(item.user.description));
+					row.appendChild(col);
+
+					col = document.createElement("td");
+					item.entities.urls.forEach(function(url,i){
+						anchor = document.createElement("a");
+						anchor.appendChild(document.createTextNode(url.expanded_url));
+						anchor.href = url.expanded_url;
+						col.appendChild(anchor);
+					});
+					col.className = "truncate";
+					row.appendChild(col);
+					document.getElementById("body").appendChild(row);
+				});
+				/*
+				for(i=0;i<document.getElementsByTagName("th").length;i++)
+					document.getElementsByTagName("th")[i].width = document.getElementsByTagName("td")[i].offsetWidth;
+				*/
+				document.getElementById("load").style.visibility = "hidden";
+			});
+			ajax.open("GET","data.json",true);
+			ajax.send(null);
+			document.getElementById("body").innerHTML = "";
+			document.getElementById("load").style.visibility = "visible";
+		};
+		function toggle() {
+			noRT = !noRT;
+			load();
+		}
+		window.onload = function() { load(); }
+	</script>
+</html>
