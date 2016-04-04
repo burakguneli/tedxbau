@@ -73,7 +73,7 @@ window.onload = function() {
 			$(this).toggleClass('fs');
 		};
 	*/
-	if(1459382400000 > Date.now())
+	if(1459382400000 > Date.now() && 1459641600000 < Date.now())
 		document.getElementsByClassName("ticket")[0].style.display = "none";
 	return;
 };
