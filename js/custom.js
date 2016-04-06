@@ -74,7 +74,7 @@ window.onload = function() {
 		};
 	*/
 	//if(1459382400000 > Date.now() && 1459641600000 < Date.now())
-	//	document.getElementsByClassName("ticket")[0].style.display = "none";
+		document.getElementsByClassName("ticket")[0].style.display = "none";
 	return;
 };
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
