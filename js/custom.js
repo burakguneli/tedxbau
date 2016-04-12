@@ -49,14 +49,15 @@ document.getElementsByTagName("body")[0].style.opacity = "0";
 window.onload = function() {
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
+	/*
 	$(document).ready(function() {
 		for(i=0;i<vids.length/4;i++)
 			document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
 		return;
-	});
+	})
+	*/;
 	sp.shuffle();
 	g.shuffle();
-	vids.shuffle();
 	for(i=0;i<sp.length;i++)
 		document.getElementById('sps').innerHTML = "<a target=_blank href='"+sp[i].split("|")[1]+"' class='img pic contain' data-img='sp/"+sp[i].split("|")[0]+"''>.</a>\n"+document.getElementById('sps').innerHTML;
 	for(i=0;i<g.length/2;i++)
