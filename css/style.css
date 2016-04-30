@@ -362,3 +362,8 @@ load {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	opacity:1;
 }
+.vm {
+	width:33%;
+	height:23%;
+	padding:1%;
+}

@@ -42,18 +42,18 @@ var vids = [
 	"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
 ];
 vids16 = [
-	"//youtube.com/watch?v=1Zz9cuJok-A",
-	"//youtube.com/watch?v=xt6Jt7AUEhA",
-	"//youtube.com/watch?v=qesvZLmjQtY",
-	"//youtube.com/watch?v=DtK5O3-ZymE",
-	"//youtube.com/watch?v=Qbnc4g7pmSk",
-	"//youtube.com/watch?v=pUvbPTpXtVI",
-	"//youtube.com/watch?v=rkMUtLtTAhg",
-	"//youtube.com/watch?v=48h_900ykyQ",
-	"//youtube.com/watch?v=RQeuM1xhpOU",
-	"//youtube.com/watch?v=lVKqlNOx5Do",
-	"//youtube.com/watch?v=R2GKZ1e9pMI",
-	"//youtube.com/watch?v=1eweH9KE_XQ",
+	"//youtube.com/embed/=1Zz9cuJok-A",
+	"//youtube.com/embed/xt6Jt7AUEhA",
+	"//youtube.com/embed/qesvZLmjQtY",
+	"//youtube.com/embed/DtK5O3-ZymE",
+	"//youtube.com/embed/Qbnc4g7pmSk",
+	"//youtube.com/embed/pUvbPTpXtVI",
+	"//youtube.com/embed/rkMUtLtTAhg",
+	"//youtube.com/embed/48h_900ykyQ",
+	"//youtube.com/embed/RQeuM1xhpOU",
+	"//youtube.com/embed/lVKqlNOx5Do",
+	"//youtube.com/embed/R2GKZ1e9pMI",
+	"//youtube.com/embed/1eweH9KE_XQ",
 ];
 //document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 setTimeout(function() {
@@ -78,7 +78,7 @@ window.onload = function() {
 		document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
 	vids16.shuffle();
 	for(i=0;i<4;i++)
-		document.getElementById("v16").innerHTML = "<iframe class='vid vm' src='"+vids16[i]+"' frameborder=0 allowfullscreen ></iframe>\n"+document.getElementById("v16").innerHTML;
+		document.getElementById("v16").innerHTML = "<iframe class='vid vm' src='"+vids16[i]+"' frameborder=0 allowfullscreen ></iframe>"+document.getElementById("v16").innerHTML;
 	fix_links();
 	fix_images();
 	document.getElementById('map').src = "https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
