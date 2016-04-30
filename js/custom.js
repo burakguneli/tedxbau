@@ -41,6 +41,20 @@ var vids = [
 	"<iframe class='vid' src='//youtube.com/embed/tXSqx5ZOAF4' frameborder=0 allowfullscreen ></iframe>",
 	"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
 ];
+vids16 = [
+	"//youtube.com/watch?v=1Zz9cuJok-A",
+	"//youtube.com/watch?v=xt6Jt7AUEhA",
+	"//youtube.com/watch?v=qesvZLmjQtY",
+	"//youtube.com/watch?v=DtK5O3-ZymE",
+	"//youtube.com/watch?v=Qbnc4g7pmSk",
+	"//youtube.com/watch?v=pUvbPTpXtVI",
+	"//youtube.com/watch?v=rkMUtLtTAhg",
+	"//youtube.com/watch?v=48h_900ykyQ",
+	"//youtube.com/watch?v=RQeuM1xhpOU",
+	"//youtube.com/watch?v=lVKqlNOx5Do",
+	"//youtube.com/watch?v=R2GKZ1e9pMI",
+	"//youtube.com/watch?v=1eweH9KE_XQ",
+];
 //document.getElementsByTagName("body")[0].style.webkitFilter = "blur(0.2em)";
 setTimeout(function() {
 	document.getElementsByTagName("body")[0].style.opacity = "1";
@@ -62,6 +76,9 @@ window.onload = function() {
 		document.getElementById('sps').innerHTML = "<a target=_blank href='"+sp[i].split("|")[1]+"' class='img pic contain' data-img='sp/"+sp[i].split("|")[0]+"''>.</a>\n"+document.getElementById('sps').innerHTML;
 	for(i=0;i<g.length/2;i++)
 		document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
+	vids16.shuffle();
+	for(i=0;i<4;i++)
+		document.getElementById("v16").innerHTML = "<iframe class='vid vm' src='"+vids16[i]+"' frameborder=0 allowfullscreen ></iframe>\n"+document.getElementById("v16").innerHTML;
 	fix_links();
 	fix_images();
 	document.getElementById('map').src = "https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";
