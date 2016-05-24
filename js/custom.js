@@ -42,7 +42,7 @@ var vids = [
 	"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
 ];
 vids16 = [
-	"//youtube.com/embed/=1Zz9cuJokA",
+	"//youtube.com/embed/1Zz9cuJok-A",
 	"//youtube.com/embed/xt6Jt7AUEhA",
 	"//youtube.com/embed/qesvZLmjQtY",
 	"//youtube.com/embed/DtK5O3-ZymE",
