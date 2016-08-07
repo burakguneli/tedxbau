@@ -8,7 +8,7 @@ Array.prototype.shuffle = function() {
 	}
 	return input;
 }
-var sp = ['coop.png|','guntar.png|','markoc.png|','ozgun.png|','isezero.png|','abbox.png|','sh.png|','mes.png|',];
+var sp = ['coop.png| http://coop.bahcesehir.edu.tr','guntar.png| http://güntar.com/tr/','markoc.png|','ozgun.png|','isezero.png| http://www.istanbul-se.com','abbox.png|','sh.png| http://www.shangri-la.com/istanbul','mes.png|',];
 var g = [
 	"DSC05735",
 	"DSC05743",
@@ -27,21 +27,21 @@ var g = [
 	"DSCN1727",
 	"DSCN1749",
 ];
-var vids = [
-	"<iframe class='vid' src='//youtube.com/embed/pnDDU16JXQA' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/1PBkHmb5VlE' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/BgsIWMdGpQA' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/QpxCpjmcPgg' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/WVJMeOc2MCw' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/GVfxI4othCg' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/Tskvrwsa_Qo' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/xNVrCumNnAI' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/i519o64tj5w' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/hX_BykD4cVQ' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/tXSqx5ZOAF4' frameborder=0 allowfullscreen ></iframe>",
-	"<iframe class='vid' src='//youtube.com/embed/-ejVR8xqkfs' frameborder=0 allowfullscreen ></iframe>",
+var vids15 = [
+	"//youtube.com/embed/pnDDU16JXQA",
+	"//youtube.com/embed/1PBkHmb5VlE",
+	"//youtube.com/embed/BgsIWMdGpQA",
+	"//youtube.com/embed/QpxCpjmcPgg",
+	"//youtube.com/embed/WVJMeOc2MCw",
+	"//youtube.com/embed/GVfxI4othCg",
+	"//youtube.com/embed/Tskvrwsa_Qo",
+	"//youtube.com/embed/xNVrCumNnAI",
+	"//youtube.com/embed/i519o64tj5w",
+	"//youtube.com/embed/hX_BykD4cVQ",
+	"//youtube.com/embed/tXSqx5ZOAF4",
+	"//youtube.com/embed/-ejVR8xqkfs",
 ];
-vids16 = [
+var vids16 = [
 	"//youtube.com/embed/1Zz9cuJok-A",
 	"//youtube.com/embed/xt6Jt7AUEhA",
 	"//youtube.com/embed/qesvZLmjQtY",
@@ -63,22 +63,21 @@ document.getElementsByTagName("body")[0].style.opacity = "0";
 window.onload = function() {
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
-	/*
-	$(document).ready(function() {
-		for(i=0;i<vids.length/4;i++)
-			document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
-		return;
-	})
-	*/;
 	sp.shuffle();
 	g.shuffle();
+	vids15.shuffle();
+	vids16.shuffle();
+	$(document).ready(function() {
+		for(i=0;i<vids16.length;i++)
+			document.getElementById("vidz").innerHTML = "<iframe allowfullscreen frameborder=0 class='vid' src='"+vids16[i]+"'></iframe>\n"+document.getElementById("vidz").innerHTML;
+		return;
+	});
 	for(i=0;i<sp.length;i++)
 		document.getElementById('sps').innerHTML = "<a target=_blank href='"+sp[i].split("|")[1]+"' class='img pic contain' data-img='sp/"+sp[i].split("|")[0]+"''>.</a>\n"+document.getElementById('sps').innerHTML;
 	for(i=0;i<g.length/2;i++)
 		document.getElementById('pics').innerHTML = "<div class='img pic' data-img='g/"+g[i]+".lite.jpg'>.</div>\n"+document.getElementById('pics').innerHTML;
-	vids16.shuffle();
-	for(i=0;i<4;i++)
-		document.getElementById("v16").innerHTML = "<iframe class='vid vm' src='"+vids16[i]+"' frameborder=0 allowfullscreen ></iframe>"+document.getElementById("v16").innerHTML;
+//	for(i=0;i<4;i++)
+//		document.getElementById("vmain").innerHTML = "<iframe class='vid vm' src='"+vids17[i]+"' frameborder=0 allowfullscreen ></iframe>"+document.getElementById("vmain").innerHTML;
 	fix_links();
 	fix_images();
 	document.getElementById('map').src = "https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2347980040045!2d29.006860315569625!3d41.041994179297376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2zQmFow6dlxZ9laGlyIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1452865206865";

@@ -2,7 +2,7 @@
 #### Date: 3 Feb 2016
 #### Author: Mert Akengin
 
-###### [pvtmert.github.io/tedxbau](//pvtmert.github.io/tedxbau) and [//tedxbahcesehir.com]
+###### [pvtmert.github.io/tedxbau](//pvtmert.github.io/tedxbau) and [tedxbahcesehir.com](//tedxbahcesehir.com)
 
 ### WTF is it?
 
